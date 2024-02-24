@@ -21,9 +21,5 @@ public class Cliente {
     private String tlf;
     @OneToOne (mappedBy = "cliente", cascade = CascadeType.ALL)
     private BlackList blackList;
-    @OneToMany (mappedBy = "cliente", cascade = CascadeType.ALL)
-    private Set<Visita> visitas;
-
-
 
 }
